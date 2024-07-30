@@ -2,9 +2,8 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  transform: translate(var(--posx), var(--posy));
   transform-origin: center;
-  /* transform: rotate(var(--rot)); */
+  transform: translate(var(--posx), var(--posy)) translate(calc(calc(var(--sizex) / 2) * -1), calc(calc(var(--sizey) / 2) * -1)) rotate(var(--rot));
   width: var(--sizex);
   height: var(--sizey);
 }
