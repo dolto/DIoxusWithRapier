@@ -188,7 +188,7 @@ fn App() -> Element {
             let col = &collider_set()[body.colliders()[0]];
             let size = col.shape().as_cuboid().unwrap().half_extents;
             let x = body.translation().x;
-            let y = body.translation().y - size.y * -1.;
+            let y = body.translation().y - size.y * -3.;
             rsx! {
                 div {
                     class: "unit ground",
